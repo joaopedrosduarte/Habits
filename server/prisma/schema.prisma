@@ -1,0 +1,46 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id String @id @default(uuid())
+
+  name String @db.VarChar(255)
+
+  login String @db.VarChar(255) @unique
+  password String @db.VarChar(255)
+
+  createdAt DateTime @default(now())
+  update DateTime @updatedAt
+
+  tasks Task[]
+  @@map("users")
+}
+
+model Task {
+  id String @id @default(uuid())
+
+  name String @db.VarChar(255)
+  description String @db.VarChar(255)
+
+  createdAt DateTime @default(now())
+  update DateTime @updatedAt
+  endAt DateTime? 
+
+  // 0 - PENDENTE / 1 CONCLUIDA / 2 - CANCELADA
+  status Int @default(0)
+
+  userId String @unique
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("tasks")
+}
+
