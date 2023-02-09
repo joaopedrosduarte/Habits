@@ -19,6 +19,7 @@ E Ui caprichada ( Na real foi oque me custou mais tempo, algo que me complicou u
 
 Plus : 
 Tinha planos de adicionar uma API de um site de fotos para incrementar na Ui mas como iria custar muito tempo, preferi deixar isso como planos futuros.
+Pensar um pouco mais na responsividade, sempre tem como melhorar!
 
 ## How to use ? :gear:
 
