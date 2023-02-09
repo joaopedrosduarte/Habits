@@ -17,6 +17,9 @@ Autenticação sem libs externas sem problemas
 Aplicação de protected components junto a autenticação
 E Ui caprichada ( Na real foi oque me custou mais tempo, algo que me complicou um pouco. )
 
+Plus : 
+Tinha planos de adicionar uma API de um site de fotos para incrementar na Ui mas como iria custar muito tempo, preferi deixar isso como planos futuros.
+
 ## How to use ? :gear:
 
 Some of the requirements to run and compile this process on your machine :
