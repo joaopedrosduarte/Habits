@@ -9,17 +9,17 @@ Primeiramente o planejado era fazer uma aplicação com 3 funcionalidades princi
 Porém o realizado na real me deixou satisfeito pois estava fora da zona de conforto com algumas tecnologias, porém quando se tem ideia de uma parecida você acaba pegando a lógica sem dificuldade, além de minha internet ter caído essa semana toda desde de o dia 4 deste mês de Fevereiro. 
 
 Realizado : 
-Criação da API REST sem problemas 
-Criação do CRUD no front sem problemas
-Criação da tela de Usar sem problemas 
-Criação do map incompleta 
-Autenticação sem libs externas sem problemas
-Aplicação de protected components junto a autenticação
-E Ui caprichada ( Na real foi oque me custou mais tempo, algo que me complicou um pouco. )
+* Criação da API REST sem problemas.
+* Criação do CRUD no front sem problemas.
+* Criação da tela de Usar sem problemas.
+* Criação do map incompleta.
+* Autenticação sem libs externas sem problemas.
+* Aplicação de protected components junto a autenticação.
+* E Ui caprichada ( Na real foi oque me custou mais tempo, algo que me complicou um pouco. ).
 
 Plus : 
-Tinha planos de adicionar uma API de um site de fotos para incrementar na Ui mas como iria custar muito tempo, preferi deixar isso como planos futuros.
-Pensar um pouco mais na responsividade, sempre tem como melhorar!
+* Tinha planos de adicionar uma API de um site de fotos para incrementar na Ui mas como iria custar muito tempo, preferi deixar isso como planos futuros.
+* Pensar um pouco mais na responsividade, sempre tem como melhorar!
 
 ## How to use ? :gear:
 
