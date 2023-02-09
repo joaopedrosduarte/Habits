@@ -11,7 +11,8 @@ datasource db {
 }
 
 model User {
-  id String @id @default(uuid())
+  id Int @id @default(autoincrement())
+  token String @unique @default(uuid())
 
   name String @db.VarChar(255)
 
@@ -26,7 +27,7 @@ model User {
 }
 
 model Task {
-  id String @id @default(uuid())
+  id Int @id @default(autoincrement())
 
   name String @db.VarChar(255)
   description String @db.VarChar(255)
@@ -38,8 +39,8 @@ model Task {
   // 0 - PENDENTE / 1 CONCLUIDA / 2 - CANCELADA
   status Int @default(0)
 
-  userId String @unique
-  user User @relation(fields: [userId], references: [id])
+  userToken String 
+  user User @relation(fields: [userToken], references: [token])
 
   @@map("tasks")
 }
