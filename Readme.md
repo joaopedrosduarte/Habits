@@ -3,7 +3,6 @@
 Basicamente é um aplicativo que tem 
 
 ## How to use ? :gear:
-<img src="./image/C-logo-editado.png" align="right" width="300">
 
 Some of the requirements to run and compile this process on your machine :
 
