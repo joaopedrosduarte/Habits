@@ -43,11 +43,11 @@ export function TaskTypeTwo({ name, description, createdAt ,onHandleDeleteTask, 
     return (
         <Dialog.Root>
             <Dialog.Trigger>
-                <div className={`flex flex-col rounded-2xl mb-2 w-[12rem] ${isTaskChecked ? "shadow-sm" : "shadow-md"} transition-all`}>
-                    <div className="w-[12rem] h-32 overflow-hidden flex rounded-t-2xl">
+                <div className={`flex flex-col rounded-2xl mb-2 w-auto ${isTaskChecked ? "shadow-sm" : "shadow-md"} transition-all`}>
+                    <div className="h-32 overflow-hidden flex rounded-t-2xl">
                         <img className="object-cover min-w-full min-h-full" src={"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2960&q=80"} />
                     </div>
-                    <div className={`bg-white rounded-b-3xl w-[12rem] h-auto flex px-3 pb-4 pt-3 justify-between items-center text-lg font-light gap-4 ${isTaskChecked ? "text-zinc-400 line-through" : null} transition-all`}>
+                    <div className={`bg-white rounded-b-3xl h-auto flex px-3 pb-4 pt-3 justify-between items-center text-lg font-light gap-4 ${isTaskChecked ? "text-zinc-400 line-through" : null} transition-all`}>
                         <h1 className='overflow-hidden text-ellipsis'>{name}</h1>
                         <label className="flex flex-1 justify-end items-center">
                             <input type="checkbox" onClick={() => handleChangeTaskStatus()} className="opacity-0 w-0 h-0" />
@@ -60,7 +60,7 @@ export function TaskTypeTwo({ name, description, createdAt ,onHandleDeleteTask, 
             </Dialog.Trigger>
             <Dialog.Overlay className='w-screen h-screen bg-black/80 fixed inset-0' />
                 <Dialog.Portal>  
-                    <Dialog.Content className='relative bg-white rounded-2xl w-full max-w-md top-1/4 left-1/2 -translate-x-1/2'>
+                    <Dialog.Content className='absolute bg-white rounded-2xl w-full max-w-md top-1/4 left-1/2 -translate-x-1/2'>
                         <div className='flex justify-end'>
                             <div className='flex absolute justify-end m-4'>
                                 <div className="flex justify-center items-center bg-white rounded-2xl w-8 h-8" >

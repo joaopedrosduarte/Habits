@@ -54,8 +54,7 @@ export function TaskList() {
             await api.post("/home/newtask", {
                 name: newTaskName,
                 description: newTaskDescription,
-                userToken: actualUser.token,
-            })
+                userToken: actualUser.token,            })
         } catch (error){
             message.error("Error with creation of the task, try again !");
         }
@@ -80,7 +79,7 @@ export function TaskList() {
                 </form>
                 <Dialog.Portal>
                     <Dialog.Overlay className='w-screen h-screen bg-black/80 fixed inset-0' />
-                    <Dialog.Content className='ab p-10 bg-white rounded-2xl w-full max-w-md top-1/4 left-1/2 -translate-x-1/2'>
+                    <Dialog.Content className='absolute p-10 bg-white rounded-2xl w-full max-w-md top-1/4 left-1/2 -translate-x-1/2 '>
                         <Dialog.Close className='absolute right-6 top-6 text-zinc-400 hover:text-zinc-200 transition-colors'>
                             <X size={24} arial-label="Fechar"/>
                         </Dialog.Close>
